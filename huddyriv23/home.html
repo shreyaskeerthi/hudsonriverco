@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Biryani" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        body {
+          overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <style>
+        h2{
+        font-family: 'Cormorant Garamond', serif; /* Change the font to Cormorant Garamond */
+        font-weight: thin;
+        font-size: 20px;
+      }
+      .logoSpacing{
+        font-family: 'Cormorant Garamond', serif; /* Change the font to Cormorant Garamond */
+        font-weight: bold;
+        font-size: 20px;
+
+      }
+      
+
+    </style>
+
+
+    <div id="root">
+        <div class="sc-bxivhb dUiVDW">
+            <div class="homeDesktop">
+       
+
+
+
+
+
+                <div>
+
+                    <div class="navbar">
+                        <a href="/home.html">
+                            <img src="/logo.svg" alt="Company logo" width="217.2px" height="122.4px">
+                                
+                        </a>
+                        <div class="navbar-links">
+                            <a href="/aboutUs.html">About</a>
+                            <a href="/projects.html">Portfolio</a>
+                            <a href="/contact.html">Contact</a>
+                            
+                            
+                        </div>
+                    </div>
+                
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="sc-kgAjT pbCfM sc-TOsTZ kjYrri">
+                    <div class="sc-cJSrbW ipLTMg sc-TOsTZ iLLCTo " style="height: 100%; "><img src="city.svg" alt="" class="sc-cvbbAY hoNYHU res" style="height: 100%; max-width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="sc-cJSrbW ipLTMg sc-TOsTZ gEeNQq" style="opacity: 0.9; height: 100%;">
+                    </div>
+                    <div class="sc-bwzfXH lhbjAE sc-bdVaJa gxKCuo" style="min-height: 100vh;">
+                        <div class="logo-container">
+                            <h2 class="logoSpacing sc-VigVT hOuJem" style="font-weight: bold; text-align: left;">
+                                Real Estate Private Equity & Investments
+                            </h2>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="homeMobile">
+                <!-- <div class="topHome">
+                    <div>
+                        <div>
+                            <div class="burger-menu">
+                                <div class="bar1">
+
+                                </div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                            <a aria-current="page" class="active" href="/home"></a>
+                            <a href="/about"></a>
+                            <a href="/contact"></a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="sc-kgAjT pbCfM sc-TOsTZ kjYrri">
+                    <div class="sc-cJSrbW ipLTMg sc-TOsTZ iLLCTo" style="height: 100%;">
+                        <img src="mobilecitysvg.svg" alt="" class="sc-cvbbAY hoNYHU" style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="sc-cJSrbW ipLTMg sc-TOsTZ gEeNQq" style="opacity: 0.9; height: 100%;">
+                    </div>
+                    <div class="sc-bwzfXH lhbjAE sc-bdVaJa gxKCuo" style="min-height: 100vh;">
+                        <h2 class="logoSpacing sc-VigVT hOuJem">
+                            <img class="logoSize" src="logo.svg" alt="Logo">
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+       
+        
+        
+
+
+
+        <!-- <div class="second">
+            <img src="city.svg" class="city">
+        </div>
+        <div class="first">
+            <h2 class="logo">
+                <img src="logo.svg" class="logoimg">
+            </h2>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <script>
+            function onClickmenu(x) {
+                x.classList.toggle("change");
+                
+                console.log(document.querySelector(".overlay").style.display);
+                if(document.querySelector(".overlay").style.display =='none')
+                {
+                    document.querySelector(".overlay").style.display='flex';
+                    console.log("none tha")
+                }
+                else if(document.querySelector(".overlay").style.display =='flex')
+                {
+                    document.querySelector(".overlay").style.display='none';
+                    console.log("flex tha")
+                }
+                else{
+                    document.querySelector(".overlay").style.display='flex'; 
+                }
+            }
+        </script>
+</body>
+
+</html>

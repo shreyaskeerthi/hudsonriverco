@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+      h1 {
+        font-family: 'Playfair Display', serif;
+      }
+
+
+      .proj-section img {
+        filter: grayscale(100%);
+        transition: 0.3s ease-in-out;
+      }
+      .proj-section img:hover {
+        filter: grayscale(0%);
+      }
+      .proj-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+      .proj-section,
+      .port-section {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .banner {
+        width: 200px;
+        height: 0;
+        background: white;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+      }
+      .banner.show {
+        height: 50px;
+      }
+      .banner p {
+        margin: 0;
+        padding: 10px;
+      }
+
+
+
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: none;
+      }
+      .overlay.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .overlay .title {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+      .overlay .images {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+      }
+      .overlay .images img {
+        width: 200px;
+        height: 100px;
+        margin: 0 10px;
+      }
+      .overlay .text {
+        width: 600px;
+        margin: 20px 0;
+      }
+      .overlay .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 40px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar">
+        <img src="/logo.svg" alt="Company logo" width="10%" height="10%">
+        <div class="navbar-links">
+            <a href="/home.html">Home</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/aboutUs.html">Team</a>
+        </div>
+    </div>
+
+    <h1>Projects</h1>
+    <div class="proj-section">
+      <div class="proj-row">
+        <img src="image1.png" alt="Project 1" width="200px" height="100px" style="margin: 10px" data-title="Greenpoint, NY" data-images="proj1-a.jpg,proj1-b.jpg,proj1-c.jpg" data-text="6-parcel portfolio comprised of a waterfront Building with substantial development rights, 2 mixed-use buildings, 1 commercial building and 2 commercial parcels. ZFA - 150,000 SF">
+        <img src="IMG_2438.png" alt="Project 2" width="200px" height="100px" style="margin: 10px" data-title="UWS, NY" data-images="proj2-a.jpg,proj2-b.jpg" data-text="This mixed use property comprising of residential and medical office units is located on 82nd street, one block west of Central Park and the Museum of Natural History. We intend to add value to sales by carrying out superior renovations and creative marketing in order to command the highest possible sales prices for the market. Renovations of each unit will be purposefully designed to a standard above the common renovations typical to similar area buildings.">
+      </div>
+      <div class="proj-row">
+        <img src="IMG_3080.png" alt="Project 3" width="200px" height="100px" style="margin: 10px" data-title="Highlands, Atlanta" data-images="proj3-a.jpg,proj3-b.jpg,proj3-c.jpg,proj3-d.jpg" data-text="Highlands - Industrial office flex building is located in DENSE INDUSTRIAL/DISTRIBUTION NEIGHBORHOOD OF AFFLUENT SMYRNA, GA, A CLOSE-IN SUBURB OF ATLANTA. We fully RENOVATED the property IN 2021, DEMISING A FORMER SINGLE TENANT FACILITY TO A THREE SUITE BUILDING. INCREASED OCCUPANCY FROM 12% TO 100% BY LEASING 27,548 SF IN 12 MONTHS. 40,000 SF - Acquired Feb 2021">
+        <img src="1130-Hurricane-Shoals-Rd-Lawrenceville-GA-Primary-Photo-1-LargeHighDefinition.jpeg" alt="Project 4" width="200px" height="100px" style="margin: 10px" data-title="Hurricane Shoals, Atlanta" data-images="proj4-a.jpg,proj4-b.jpg" data-text="Hurricane Shoals is located in a busy business park in Lawrenceville, GA, a suburb of Atlanta. The space is primarily configured for offices with some suites dedicated for lab use. There is strong leasing demand for professional offices no. Neighborhood ownership is primarily owner-user and institutional. Tenants attracted to hwy access, labor supply and proximity to Atlanta suburbs. Ownership includes Duke Realty, Blackstone, Rooker and MDH. Acquired July 2021 - 46,000 SF">
+        <img src="3500-Loop-Rd-Mcdonough-GA-Building-Photo-2-LargeHighDefinition.jpeg" alt="Project 5" width="200px" height="100px" style="margin: 10px" data-title="McDonough, GA" data-images="proj5-a.jpg,proj5-b.jpg,proj5-c.jpg,proj5-d.jpg,proj5-e.jpg" data-text="The property is located in McDonough, GA, less than 1.5 miles from I-75. Henry County’s biggest consumer draw, South Point (over 1,000,000 SF) sits between this property and the interstate, receiving over 5,000,000 visitors annually. The region is one of Georgia's fastest growing cities. We will convert this single tenant facility to eight rent-ready flex/industrial suites, similar to our other projects in the Atlanta area. Acquired -November 2022. 62,000 SF">
+    </div>
+  </div>
+  <h1>Portfolio</h1>
+  <div class="port-section">
+    <div class="proj-row">
+      <img src="kaya.png" alt="Portfolio 1" width="200px" height="100px" style="margin: 10px" data-title="Portfolio 1" data-images="port1-a.jpg,port1-b.jpg" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+      
+      <img src="pillar.png" alt="Portfolio 2" width="200px" height="100px" style="margin: 10px" data-title="Portfolio 2" data-images="port2-a.jpg,port2-b.jpg,port2-c.jpg" data-text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+    </div>
+  </div>
+  <div class="overlay" id="overlay">
+    <h2 class="title" id="overlay-title"></h2>
+    <div class="images" id="overlay-images"></div>
+    <div class="text" id="overlay-text"></div>
+    <span class="close-btn" id="close-btn">&times;</span>
+  </div>
+  <script>
+    const imgs = document.querySelectorAll('.proj-section img');
+    const overlay = document.getElementById('overlay');
+    const overlayTitle = document.getElementById('overlay-title');
+    const overlayImages = document.getElementById('overlay-images');
+    const overlayText = document.getElementById('overlay-text');
+
+    imgs.forEach(img => {
+      img.addEventListener('click', e => {
+        overlay.classList.add('show');
+        const title = e.target.getAttribute('data-title');
+          overlayTitle.innerHTML = title;
+          const images = e.target.getAttribute('data-images').split(',');
+          images.forEach(image => {
+            const img = document.createElement('img');
+            img.src = image;
+            overlayImages.appendChild(img);
+          });
+          const text = e.target.getAttribute('data-text');
+          overlayText.innerHTML = text;
+        });
+      });
+
+      const closeBtn = document.getElementById('close-btn');
+      closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('show');
+        overlayTitle.innerHTML = '';
+        overlayImages.innerHTML = '';
+        overlayText.innerHTML = '';
+      });
+    </script>
+  </body>
+</html>
+
+
